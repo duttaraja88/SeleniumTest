@@ -14,8 +14,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class App {
 	public static void main( String[] args ) throws Exception
     {
-    	//System.setProperty("webdriver.chrome.driver","E:\\chromedriver_win32\\chromedriver.exe");
-    	System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+    	System.setProperty("webdriver.chrome.driver","E:\\chromedriver_win32\\chromedriver.exe");
+    	//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
     	ChromeOptions chromeOptions = new ChromeOptions();
     	chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--no-sandbox");
@@ -23,7 +23,8 @@ public class App {
 
     	System.out.println("Hi, Welcome to Edureka's YouTube Live session on Selenium WebDriver");
     	
-    	driver.get("http://localhost:8081/selenium-website");
+    	//driver.get("http://localhost:8081/selenium-website");
+    	driver.get("http://http://18.223.124.18:8181/selenium-website");
     	driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
     	driver.findElement(By.name("userName")).sendKeys("dutta");
     	//Thread.sleep(5000); 
