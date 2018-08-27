@@ -24,7 +24,7 @@ public class App {
     	System.out.println("Hi, Welcome to Edureka's YouTube Live session on Selenium WebDriver");
     	
     	//driver.get("http://localhost:8081/selenium-website");
-    	driver.get("http://http://18.223.124.18:8181/selenium-website");
+    	driver.get("http://18.223.124.18:8181/selenium-website");
     	driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
     	driver.findElement(By.name("userName")).sendKeys("dutta");
     	//Thread.sleep(5000); 
