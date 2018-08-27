@@ -17,6 +17,8 @@ public class App {
     	//System.setProperty("webdriver.chrome.driver","E:\\chromedriver_win32\\chromedriver.exe");
     	System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
     	ChromeOptions chromeOptions = new ChromeOptions();
+    	chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--no-sandbox");
     	WebDriver driver = new ChromeDriver(chromeOptions);
 
     	System.out.println("Hi, Welcome to Edureka's YouTube Live session on Selenium WebDriver");
