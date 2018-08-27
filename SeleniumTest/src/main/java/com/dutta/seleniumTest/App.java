@@ -14,8 +14,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class App {
 	public static void main( String[] args ) throws Exception
     {
-    	System.setProperty("webdriver.chrome.driver","E:\\chromedriver_win32\\chromedriver.exe");
-    	//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+    	//System.setProperty("webdriver.chrome.driver","E:\\chromedriver_win32\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
     	ChromeOptions chromeOptions = new ChromeOptions();
     	chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--no-sandbox");
