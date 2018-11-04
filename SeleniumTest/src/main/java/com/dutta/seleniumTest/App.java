@@ -23,7 +23,7 @@ public class App {
 
 		System.out.println("Hi, Welcome Edureka Certification Project");
 
-		driver.get("http://18.222.208.5:8090/index.php");
+		driver.get("http://18.224.169.134:8100/index.php");
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.findElement(By.id("About Us")).click();
 //		Thread.sleep(5000);
